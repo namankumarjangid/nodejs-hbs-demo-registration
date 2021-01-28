@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+
+<body>
+    {{>navbar}}
+    <div>
+        <div class="row">
+            <form class="col s12" action="/register" method="POST">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate" name="firstname">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate" name="lastname">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s6">
+                        <label>
+                            <input class="with-gap" name="group3" type="radio" name="gender" checked />
+                            <span>Male</span>
+                        </label>
+                    </div>
+                    <div class="col s6">
+                        <label>
+                            <input class="with-gap" name="group3" type="radio" name="gender" checked />
+                            <span>Female</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="number" type="number" class="validate" name="age">
+                        <label for="number">Age</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="number" type="number" class="validate" name="phone">
+                        <label for="number">Phone</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" name="email">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate" name="password">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate" name="confirmpassword">
+                        <label for="password">Confirm Password</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light btnRegister" type="submit" name="action"
+                    value="Register">Register
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
